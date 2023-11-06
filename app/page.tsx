@@ -1,3 +1,4 @@
+import LabTilt from "./LabTilt";
 import Navbar from "./Navbar";
 import StartPage from "./StartPage";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Navbar />
       <StartPage />
+      <LabTilt />
     </main>
   )
 }
