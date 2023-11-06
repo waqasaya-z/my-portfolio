@@ -25,7 +25,7 @@ const StartPage = () => {
   }, []);
 
   return (
-    <div className=" text-white font-medium text-4xl mt-72 flex flex-col justify-center items-center">
+    <div className="border border-black h-screen text-white font-medium text-4xl flex flex-col justify-center items-center">
       <h1>
         {" "}
         Hi, My name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}

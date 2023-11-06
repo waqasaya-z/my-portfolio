@@ -15,8 +15,8 @@ const tilts = [
 
 const LabTilt = () => {
   return (
-    <div className=" mt-40 text-center">
-      <h1 className="text-white text-3xl text-center inline-flex">
+    <div className="border border-black text-center p-6">
+      <h1 className="text-white text-3xl font-semibold text-center inline-flex">
         {" "}
         Laboratory{" "}
         <span className="mt-1">
@@ -59,7 +59,7 @@ const TiltCard = ({
     ["-17.5deg", "17.5deg"]
   );
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: any) => {
     const rect = e.target.getBoundingClientRect();
 
     const width = rect.width;
@@ -91,11 +91,12 @@ const TiltCard = ({
       }}
       className="relative h-56 max-w-md rounded-xl "
     >
-      <div className="shadow-black shadow-lg">
-       <div className="text-white text-2xl font-medium absolute top-20 mr-14 z-10 w-10">
-        <h1>
+      <div className="">
+       <div className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10">
+        <h1 className="">
           {description}{" "}
         </h1>
+        
         <div className="border-b-2 border-white w-20 h-4 mx-auto my-4"></div>
          <h2 > 0{id} </h2>
        </div>
