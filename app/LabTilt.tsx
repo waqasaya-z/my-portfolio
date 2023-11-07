@@ -7,11 +7,11 @@ import MultiStep from "@/public/Multistep form - Google Chrome 03_09_2023 6_59_2
 import Gamehub from "@/public/GameHub - Google Chrome 03_09_2023 5_34_32 pm.png";
 import CountriesAPI from "@/public/Countries of the World - Google Chrome 03_09_2023 6_14_04 pm.png";
 
-const tilts = [
-  { id: 0, imageURL: MultiStep, description: "Multistep form" },
-  { id: 1, imageURL: Gamehub, description: " Gamehub " },
-  { id: 2, imageURL: CountriesAPI, description: "REST Countries" }
-];
+const tilts = {
+ MultiStep: { id: 0, imageURL: MultiStep, description: "Multistep form" },
+  Gamehub: { id: 1, imageURL: Gamehub, description: " Gamehub " },
+  CountriesAPI: { id: 2, imageURL: CountriesAPI, description: "REST Countries" }
+};
 
 const LabTilt = () => {
   return (
@@ -24,10 +24,14 @@ const LabTilt = () => {
           <MdOutlineScience />{" "}
         </span>{" "}
       </h1>
-      <div className="grid grid-cols-2 place-content-center px-4 py-12">
-        {tilts.map((tilt) => (
+      <div className="grid grid-cols-6 gap-4 place-content-center px-4 py-12">
+        {/* {tilts.map((tilt) => (
           <TiltCard key={tilt.id} imageURL={tilt.imageURL} description={tilt.description} id={tilt.id}  />
-        ))}
+        ))} */}
+        <div className="col-start-1 col-span-4"> <TiltCard imageURL={tilts.Gamehub.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
+        <div className="col-start-3 col-span-3"> <TiltCard imageURL={tilts.CountriesAPI.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
+        <div> <TiltCard imageURL={tilts.MultiStep.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
+        <div> <TiltCard imageURL={tilts.Gamehub.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
       </div>
     </div>
   );
@@ -89,11 +93,11 @@ const TiltCard = ({
         rotateX,
         transformStyle: "preserve-3d"
       }}
-      className="relative h-56 max-w-md rounded-xl "
+      className="relative h-56 max-w-md "
     >
       <div className="">
        <div className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10">
-        <h1 className="">
+        <h1 className="stroke-black">
           {description}{" "}
         </h1>
         
