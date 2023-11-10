@@ -1,5 +1,6 @@
 import LabTilt from "./LabTilt";
 import Navbar from "./Navbar";
+import PersonalInfo from "./PersonalInfo";
 import StartPage from "./StartPage";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <StartPage />
       <LabTilt />
+      <PersonalInfo />
     </main>
   )
 }

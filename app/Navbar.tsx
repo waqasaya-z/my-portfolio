@@ -6,9 +6,8 @@ import { useEffect, useState } from "react";
 const links = [
   { id: 1, name: "Start", hash: "#start" },
   { id: 2, name: "Lab", hash: "#lab" },
-  { id: 3, name: "Skills", hash: "#skills" },
-  { id: 4, name: "About", hash: "#about" },
-  { id: 5, name: "Contact", hash: "#contact" }
+  { id: 3, name: "About", hash: "#about" },
+  { id: 4, name: "Contact", hash: "#contact" }
 ];
 
 const Navbar = () => {
@@ -42,7 +41,7 @@ const Navbar = () => {
         transition={{ duration: 0.35, ease: 'easeInOut' }}
       >
         <nav className="flex flex-wrap items-center justify-between">
-          <h1> Waqas Ayaz. </h1>
+          <h1> <Link href="#start"> Waqas Ayaz. </Link>  </h1>
           <ul className="flex gap-4 mr-5">
             {links.map((link) => (
               <li key={link.id}>
