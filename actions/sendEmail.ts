@@ -12,7 +12,7 @@ const validateString = (value: unknown, maxLength: number) => {
 
 export const sendEmail = async (formData: FormData) => {
 
-    const senderEmail = formData.get('sendEmail');
+    const senderEmail = formData.get('senderEmail');
     const message = formData.get('message');
 
    if (!validateString(senderEmail, 500)){
@@ -21,12 +21,16 @@ export const sendEmail = async (formData: FormData) => {
    if (!validateString(message, 5000)){
     return {error: 'Invalid message'}
    }   
+  try {
 
-   resend.emails.send({
-    from: 'onboarding@resend.dev',
-    to: 'waqasayaz.bscssef20@iba-suk.edu.pk',
-    subject: 'Message from contact form',
-    reply_to: senderEmail as string,
-    text: message as string
-   })
+      await resend.emails.send({
+          from: 'Contact Form <onboarding@resend.dev>',
+          to: 'waqasayaz.bscssef20@iba-suk.edu.pk',
+          subject: 'Message from contact form',
+          reply_to: senderEmail as string,
+          text: message as string
+        })
+    } catch (error) {
+        console.log(error)
+    }
    }
