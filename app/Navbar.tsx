@@ -1,15 +1,59 @@
+"use client";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const links = [
+  { id: 1, name: "Start", hash: "#start" },
+  { id: 2, name: "Lab", hash: "#lab" },
+  { id: 3, name: "Skills", hash: "#skills" },
+  { id: 4, name: "About", hash: "#about" },
+  { id: 5, name: "Contact", hash: "#contact" }
+];
 
 const Navbar = () => {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY,"change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+       setHidden(true)
+    } else {
+      setHidden(false); 
+    }
+  } )
+
   return (
-    <nav className="flex p-4 border border-black text-xl font-medium justify-between text-white">
-      <h1> Waqas Ayaz. </h1>
-      <ul className="flex gap-4 mr-5">
-        <li>Start</li>
-        <li>Lab</li>
-        <li>Experience</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <header className="z-[999] relative">
+      <motion.div
+        className="bg-opacity-80
+       fixed top-0 h-[4.5rem] w-full 
+       p-4 text-xl font-medium 
+       text-white shadow-lg shadow-black/[0.03]
+       sm:top-0 sm:h-[3.25rem] sm:rounded-full
+       "
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" }
+        }}
+        // initial={{ y: 0, x: ".50%", opacity: 0 }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: 'easeInOut' }}
+      >
+        <nav className="flex flex-wrap items-center justify-between">
+          <h1> Waqas Ayaz. </h1>
+          <ul className="flex gap-4 mr-5">
+            {links.map((link) => (
+              <li key={link.id}>
+                {" "}
+                <Link href={link.hash}> {link.name} </Link>{" "}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </motion.div>
+    </header>
   );
 };
 
