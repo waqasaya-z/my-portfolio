@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
-import {FaArrowRightLong} from 'react-icons/fa6'
-import { BsDownload } from 'react-icons/bs'
+import { FaArrowRightLong } from "react-icons/fa6";
+import { BsDownload } from "react-icons/bs";
 
 const TEXTS = [
   "Reactjs",
@@ -41,8 +41,22 @@ const StartPage = () => {
         Developer.{" "}
       </h2>
       <div className="text-base flex items-center mt-4">
-        <button className="flex mr-4 items-center justify-center border border-purple-950 rounded-lg p-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"> Contact Me here <span className="ml-2"> <FaArrowRightLong /> </span>  </button>
-        <button className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"> Download CV <span className="ml-2"> <BsDownload /> </span>  </button>
+        <button className="flex mr-4 items-center justify-center border border-purple-950 rounded-lg p-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+          {" "}
+          Contact Me here{" "}
+          <span className="ml-2">
+            {" "}
+            <FaArrowRightLong />{" "}
+          </span>{" "}
+        </button>
+        <a  download href="./" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+          {" "}
+          Download CV{" "}
+          <span className="ml-2">
+            {" "}
+            <BsDownload />{" "}
+          </span>{" "}
+        </a>
       </div>
     </div>
   );

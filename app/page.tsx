@@ -1,3 +1,4 @@
+import EmailSection from "./EmailSection";
 import LabTilt from "./LabTilt";
 import Navbar from "./Navbar";
 import PersonalInfo from "./PersonalInfo";
@@ -10,6 +11,7 @@ export default function Home() {
       <StartPage />
       <LabTilt />
       <PersonalInfo />
+      <EmailSection />
     </main>
   )
 }
