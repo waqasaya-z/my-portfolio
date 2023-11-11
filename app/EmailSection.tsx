@@ -23,7 +23,7 @@ const EmailSection = () => {
       className=" mt-16 w-full text-center"
     >
       <div className="flex flex-col items-center justify-center text-white font-medium">
-        <h1 className="text-4xl"> Write to me </h1>
+        <h1 className="text-3xl"> Write to me </h1>
         <p className="text-sm text-gray-700">
           {" "}
           Please contact me directly at{" "}

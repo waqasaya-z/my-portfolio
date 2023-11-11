@@ -7,7 +7,7 @@ import Link from "next/link"
 const SocialContact = () => {
   return (
     <div className="mt-4">
-        <div className="text-center">
+        <div className="text-white font-semibold text-center">
             <h1 className="text-4xl text-white"> Contact </h1>
         </div>
         <div className="grid grid-cols-3 mt-24 gap-2 text-lg font-medium text-[#5d39a4] shadow-black stroke-black">
