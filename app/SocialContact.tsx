@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const SocialContact = () => {
   return (
-    <div className="mt-2">
+    <div className="mt-4">
         <div className="text-center">
             <h1 className="text-4xl text-white"> Contact </h1>
         </div>
