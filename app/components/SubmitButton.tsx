@@ -7,7 +7,7 @@ const SubmitButton = () => {
 
   return (
     <button
-      className="group flex items-center justify-center gap-2 bg-gray-100 h-[3rem] w-[8rem] rounded-sm outline-none 
+      className="group flex items-center justify-center gap-2 bg-gray-100 h-[2rem] w-[8rem] rounded-sm outline-none 
       transition-all focus:scale-105 
       hover:scale-105 active:scale-105
       disabled:scale-100 disabled:bg-opacity-60"

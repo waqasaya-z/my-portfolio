@@ -1,5 +1,5 @@
 'use server'
-import { getErrrorMessage, validateString } from "@/utils/utils";
+import { getErrorMessage, validateString } from "@/utils/utils";
 import { Resend } from "resend"
 import ContactEmail from "@/email/contact-email";
 import React from "react";
@@ -18,10 +18,10 @@ export const sendEmail = async (formData: FormData) => {
    if (!validateString(message, 5000)){
     return {error: 'Invalid message'}
    }   
+   let data;
   try {
-
-      await resend.emails.send({
-          from: 'Contact Form <onboarding@resend.dev>',
+     data = await resend.emails.send({
+          from: 'Contact Form <onboarding@resend.com>',
           to: 'waqasayaz.bscssef20@iba-suk.edu.pk',
           subject: 'Message from contact form',
           reply_to: senderEmail as string,
@@ -32,7 +32,11 @@ export const sendEmail = async (formData: FormData) => {
         })
     } catch (error: unknown) {
        return {
-        error: getErrrorMessage(error)
+        error: getErrorMessage(error)
        }
+   }
+
+   return {
+    data
    }
 }

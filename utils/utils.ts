@@ -1,4 +1,4 @@
-export const getErrrorMessage = (error: unknown): string => {
+export const getErrorMessage = (error: unknown): string => {
     let message: string
       if(error instanceof Error){
            message = error.message
@@ -7,7 +7,7 @@ export const getErrrorMessage = (error: unknown): string => {
           } else if(typeof error === "string"){
             message = error;
           } else {
-              message = "Something went wrong"
+            message = "Something went wrong"
           }
           return message;
       }

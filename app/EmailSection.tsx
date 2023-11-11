@@ -1,11 +1,10 @@
 "use client";
-import {sendEmail} from "@/actions/sendEmail";
+import { sendEmail } from "@/actions/sendEmail";
 import { motion } from "framer-motion";
 import SubmitButton from "./components/SubmitButton";
+import toast from "react-hot-toast";
 
 const EmailSection = () => {
-
-
   return (
     <motion.section
       initial={{
@@ -21,7 +20,7 @@ const EmailSection = () => {
         once: true
       }}
       id="contact"
-      className="mb-20 w-[min(100%,38rem)] border border-black text-center"
+      className=" mt-16 w-full text-center"
     >
       <div className="flex flex-col items-center justify-center text-white font-medium">
         <h1 className="text-4xl"> Write to me </h1>
@@ -36,13 +35,22 @@ const EmailSection = () => {
         </p>
       </div>
 
-      <div>
-        <form className="flex flex-col mt-10" action={ async (formData) => {
-          await sendEmail(formData)
-        }} >
+      <div className="w-full">
+        <form
+          className="flex flex-col justify-center items-center mt-10"
+          action={async (formData) => {
+            const { data, error } = await sendEmail(formData);
+
+            if (error) {
+              toast.error("Email was not sent");
+              return;
+            }
+            toast.success("Email sent successfully!");
+          }}
+        >
           <input
             name="senderEmail"
-            className="h-10 p-4 rounded-sm"
+            className="h-10 w-1/3 p-4 rounded-sm"
             type="email"
             placeholder="example@email.com"
             required
@@ -50,7 +58,7 @@ const EmailSection = () => {
           />
           <textarea
             name="message"
-            className="h-52 my-3 rounded-sm p-4"
+            className="h-52 w-1/3 my-3 rounded-sm p-4"
             placeholder="Write to me"
             maxLength={500}
             required
