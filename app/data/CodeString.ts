@@ -14,7 +14,7 @@ const codeString = `class Waqas Ayaz {
     ····return [
     ······{ '2020-2024': 'Sukkur IBA University - Bachelors Degree (BS), Computer Science' },
     ······{ '2018-2020': 'Army Public College - HSSC, Engineering' }
-    ······{ '2006-2018': 'Army Public School - School, Sceince' }
+    ······{ '2006-2018': 'Army Public School - School, Science' }
     ····]
     ··}
     ··skills() {
