@@ -1,9 +1,10 @@
 "use client";
 import {sendEmail} from "@/actions/sendEmail";
 import { motion } from "framer-motion";
-import { FaPaperPlane } from "react-icons/fa6";
+import SubmitButton from "./components/SubmitButton";
 
 const EmailSection = () => {
+
 
   return (
     <motion.section
@@ -54,15 +55,7 @@ const EmailSection = () => {
             maxLength={500}
             required
           />
-          <button
-            className="group flex items-center justify-center gap-2 bg-gray-100 h-[3rem] w-[8rem] rounded-sm outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105"
-            type="submit"
-
-          >
-            {" "}
-            Submit{" "}
-            <FaPaperPlane className="text-xs opacity-80 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
-          </button>
+          <SubmitButton />
         </form>
       </div>
     </motion.section>
