@@ -3,17 +3,11 @@ import React from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { MdOutlineScience } from "react-icons/Md";
 import Image, { StaticImageData } from "next/image";
-import MultiStep from "@/public/Multistep form - Google Chrome 03_09_2023 6_59_23 pm.png";
-import Gamehub from "@/public/GameHub - Google Chrome 03_09_2023 5_34_32 pm.png";
-import CountriesAPI from "@/public/Countries of the World - Google Chrome 03_09_2023 6_14_04 pm.png";
-
-const tilts = {
- MultiStep: { id: 0, imageURL: MultiStep, description: "Multistep form" },
-  Gamehub: { id: 1, imageURL: Gamehub, description: " Gamehub " },
-  CountriesAPI: { id: 2, imageURL: CountriesAPI, description: "REST Countries" }
-};
+import tilts from "./data/TiltData";
 
 const LabTilt = () => {
+  const { MultiStep, CountriesAPI, Gamehub, CafeCharmant, IssueTracker, MyPortfolio,NetflixClone,Robofriends } = tilts;
+
   return (
     <div className="border border-black text-center p-6">
       <h1 className="text-white text-3xl font-semibold text-center inline-flex">
@@ -24,14 +18,15 @@ const LabTilt = () => {
           <MdOutlineScience />{" "}
         </span>{" "}
       </h1>
-      <div className="grid grid-cols-6 gap-4 place-content-center px-4 py-12">
-        {/* {tilts.map((tilt) => (
-          <TiltCard key={tilt.id} imageURL={tilt.imageURL} description={tilt.description} id={tilt.id}  />
-        ))} */}
-        <div className="col-start-1 col-span-4"> <TiltCard imageURL={tilts.Gamehub.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
-        <div className="col-start-3 col-span-3"> <TiltCard imageURL={tilts.CountriesAPI.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
-        <div> <TiltCard imageURL={tilts.MultiStep.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
-        <div> <TiltCard imageURL={tilts.Gamehub.imageURL} description={tilts.Gamehub.description} id={tilts.Gamehub.id} /> </div>
+      <div className="grid grid-rows-6 m-2 grid-flow-col gap-2 border border-black">
+       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={Gamehub.id} description={Gamehub.description} imageURL={Gamehub.imageURL} /> </div>
+       <div  className="row-span-2 col-span-3  border border-black"> <TiltCard id={IssueTracker.id} description={IssueTracker.description} imageURL={IssueTracker.imageURL} /> </div>
+       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={CountriesAPI.id} description={CountriesAPI.description} imageURL={CountriesAPI.imageURL} /> </div>
+       <div className="row-span-2  col-span-3 border border-black"> <TiltCard id={CafeCharmant.id} description={CafeCharmant.description} imageURL={CafeCharmant.imageURL} /> </div>
+       <div className="row-span-2 col-span-6 border border-black"> <TiltCard id={NetflixClone.id} description={NetflixClone.description} imageURL={NetflixClone.imageURL} /> </div>
+       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={MultiStep.id} description={MultiStep.description} imageURL={MultiStep.imageURL} /> </div>
+       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={MyPortfolio.id} description={MyPortfolio.description} imageURL={MyPortfolio.imageURL} /> </div>
+       <div className="col-span-3 border border-black"> <TiltCard id={Robofriends.id} description={Robofriends.description} imageURL={Robofriends.imageURL} /> </div>
       </div>
     </div>
   );
@@ -44,7 +39,7 @@ const TiltCard = ({
 }: {
   imageURL: StaticImageData;
   description: string;
-  id: number
+  id: number;
 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -96,15 +91,13 @@ const TiltCard = ({
       className="relative h-56 max-w-md "
     >
       <div className="">
-       <div className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10">
-        <h1 className="stroke-black">
-          {description}{" "}
-        </h1>
-        
-        <div className="border-b-2 border-white w-20 h-4 mx-auto my-4"></div>
-         <h2 > 0{id} </h2>
-       </div>
-          {" "}
+        <div className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+">
+          <h1 className="stroke-black">{description} </h1>
+
+          <div className="border-b-2 border-white w-20 h-4 mx-auto my-4"></div>
+          <h2> 0{id} </h2>
+        </div>{" "}
         <Image
           style={{
             transform: "translateZ(75px)",
