@@ -1,8 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { BsDownload } from "react-icons/bs";
+import Loading from "./components/Loading";
 
 const TEXTS = [
   "Reactjs",
@@ -21,27 +22,29 @@ const StartPage = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
+      2000 // every 3 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
 
   return (
-    <div className="border border-black h-screen text-white font-medium text-4xl flex flex-col justify-center items-center">
-      <h1>
+    <div className="border border-black h-screen text-white text-4xl flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-semibold">
         {" "}
-        Hi, My name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}
+        Hi, my name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}
       </h1>
-      <h2 className="flex gap-2">
+      <h2 className="flex gap-2 text-3xl font-semibold">
         {" "}
         I am a{" "}
-        <TextTransition className="italic" springConfig={presets.molasses}>
+        <Suspense fallback={<Loading />}>
+     <TextTransition className="italic" springConfig={presets.molasses}>
           {TEXTS[index % TEXTS.length]}{" "}
         </TextTransition>{" "}
+        </Suspense>
         Developer.{" "}
       </h2>
-      <div className="text-base flex items-center mt-4">
-        <button className="flex mr-4 items-center justify-center border border-purple-950 rounded-lg p-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+      <div className="text-base flex items-center mt-4 font-medium">
+        <button className="flex mr-4 items-center justify-center border border-purple-950 rounded-lg p-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg hover:border-[#5918df] duration-300 ease-in-out">
           {" "}
           Contact Me here{" "}
           <span className="ml-2">
@@ -49,7 +52,7 @@ const StartPage = () => {
             <FaArrowRightLong />{" "}
           </span>{" "}
         </button>
-        <a  download href="./" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+        <a  download href="./" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg duration-300 ease-in-out">
           {" "}
           Download CV{" "}
           <span className="ml-2">

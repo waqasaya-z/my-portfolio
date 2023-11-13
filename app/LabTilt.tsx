@@ -1,13 +1,13 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { MdOutlineScience } from "react-icons/Md";
 import Image, { StaticImageData } from "next/image";
 import tilts from "./data/TiltData";
+import Loading from "./components/Loading";
 
 const LabTilt = () => {
-  const { MultiStep, CountriesAPI, Gamehub, CafeCharmant, IssueTracker, MyPortfolio,NetflixClone,Robofriends } = tilts;
-
+  const { CafeCharmant, CountriesAPI,Gamehub,IssueTracker,MultiStep,MyPortfolio,NetflixClone,Robofriends } = tilts
   return (
     <div className="border border-black text-center p-6">
       <h1 className="text-white text-3xl font-semibold text-center inline-flex">
@@ -19,15 +19,15 @@ const LabTilt = () => {
         </span>{" "}
       </h1>
       <div className="grid grid-rows-6 m-2 grid-flow-col gap-2 border border-black">
-       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={Gamehub.id} description={Gamehub.description} imageURL={Gamehub.imageURL} /> </div>
-       <div  className="row-span-2 col-span-3  border border-black"> <TiltCard id={IssueTracker.id} description={IssueTracker.description} imageURL={IssueTracker.imageURL} /> </div>
-       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={CountriesAPI.id} description={CountriesAPI.description} imageURL={CountriesAPI.imageURL} /> </div>
-       <div className="row-span-2  col-span-3 border border-black"> <TiltCard id={CafeCharmant.id} description={CafeCharmant.description} imageURL={CafeCharmant.imageURL} /> </div>
-       <div className="row-span-2 col-span-6 border border-black"> <TiltCard id={NetflixClone.id} description={NetflixClone.description} imageURL={NetflixClone.imageURL} /> </div>
-       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={MultiStep.id} description={MultiStep.description} imageURL={MultiStep.imageURL} /> </div>
-       <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={MyPortfolio.id} description={MyPortfolio.description} imageURL={MyPortfolio.imageURL} /> </div>
-       <div className="col-span-3 border border-black"> <TiltCard id={Robofriends.id} description={Robofriends.description} imageURL={Robofriends.imageURL} /> </div>
-      </div>
+ <div className="row-span-2 col-span-3 border border-black"> <Suspense fallback={<Loading />}><TiltCard id={Gamehub.id} description={Gamehub.description} imageURL={Gamehub.imageURL} /> </Suspense> </div>
+ <div  className="row-span-2 col-span-3  border border-black"> <TiltCard id={IssueTracker.id} description={IssueTracker.description} imageURL={IssueTracker.imageURL} /> </div>
+ <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={CountriesAPI.id} description={CountriesAPI.description} imageURL={CountriesAPI.imageURL} /> </div>
+ <div className="row-span-2  col-span-3 border border-black"> <TiltCard id={CafeCharmant.id} description={CafeCharmant.description} imageURL={CafeCharmant.imageURL} /> </div>
+ <div className="row-span-2 col-span-6 border border-black"> <TiltCard id={MultiStep.id} description={MultiStep.description} imageURL={MultiStep.imageURL} /> </div>
+ <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={NetflixClone.id} description={NetflixClone.description} imageURL={NetflixClone.imageURL} /> </div>
+ <div className="row-span-2 col-span-3 border border-black"> <TiltCard id={MyPortfolio.id} description={MyPortfolio.description} imageURL={MyPortfolio.imageURL} /> </div>
+ <div className="col-span-3 border border-black"> <TiltCard id={Robofriends.id} description={Robofriends.description} imageURL={Robofriends.imageURL} /> </div>
+</div>
     </div>
   );
 };
@@ -91,8 +91,10 @@ const TiltCard = ({
       className="relative h-56 max-w-md "
     >
       <div className="">
-        <div className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
-">
+        <div
+          className="text-white text-2xl font-semibold relative top-20 right-7 z-10 w-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+"
+        >
           <h1 className="stroke-black">{description} </h1>
 
           <div className="border-b-2 border-white w-20 h-4 mx-auto my-4"></div>
