@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 const links = [
   { id: 1, name: "Start", hash: "#start" },

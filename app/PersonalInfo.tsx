@@ -9,7 +9,7 @@ const PersonalInfo = () => {
 
   
   return (
-    <div className="bg-[#14121c]">
+    <section id="about" className="bg-[#14121c]">
       <h1 className="text-white ml-16 p-2 text-center font-semibold text-3xl"> About </h1>
       <SyntaxHighlighter
         showLineNumbers
@@ -24,7 +24,7 @@ const PersonalInfo = () => {
         > 
         {codeString}
       </SyntaxHighlighter>
-    </div>
+    </section>
   );
 };
 
