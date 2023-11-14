@@ -4,7 +4,9 @@ import { TbBrandFiverr } from "react-icons/tb"
 import Link from "next/link"
 
 
+
 const SocialContact = () => {
+ 
   return (
     <section id="contact" className="mt-4 scroll-mt-6">
         <div className="text-white font-semibold text-center">

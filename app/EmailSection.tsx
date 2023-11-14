@@ -3,10 +3,25 @@ import { sendEmail } from "@/actions/sendEmail";
 import { motion } from "framer-motion";
 import SubmitButton from "./components/SubmitButton";
 import toast from "react-hot-toast";
+import { useInView } from "react-intersection-observer";
+import { useActiveSection } from "@/context/activeContext";
+import { useEffect } from "react";
 
 const EmailSection = () => {
+  
+  
+  const { ref, inView } = useInView();
+  const { setActionSection } = useActiveSection();
+
+  useEffect(() => {
+    if (inView) {
+      setActionSection("Contact");
+    }
+  }, [inView, setActionSection]);
+
   return (
     <motion.section
+    ref={ref}
       initial={{
         opacity: 0
       }}

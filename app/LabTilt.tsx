@@ -1,16 +1,27 @@
 "use client";
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useEffect } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { MdOutlineScience } from "react-icons/Md";
 import Image, { StaticImageData } from "next/image";
 import tilts from "./data/TiltData";
 import Loading from "./components/Loading";
+import { useInView } from "react-intersection-observer";
+import { useActiveSection } from "@/context/activeContext";
 
 const LabTilt = () => {
 
+  const { ref, inView } = useInView();
+  const { setActionSection } = useActiveSection();
+
+  useEffect(() => {
+    if (inView) {
+      setActionSection("Lab");
+    }
+  }, [inView, setActionSection]);
+
   const { CafeCharmant, CountriesAPI,Gamehub,IssueTracker,MultiStep,MyPortfolio,NetflixClone,Robofriends } = tilts
   return (
-    <section className="border border-black text-center p-6" id="lab" >
+    <section ref={ref} className="border border-black text-center p-6" id="lab" >
       <h1 className="text-white text-3xl font-semibold text-center inline-flex">
         {" "}
         Laboratory{" "}

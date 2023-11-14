@@ -5,6 +5,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { BsDownload } from "react-icons/bs";
 import Loading from "./components/Loading";
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useActiveSection } from "@/context/activeContext";
 
 const TEXTS = [
   "Reactjs",
@@ -20,6 +22,15 @@ const TEXTS = [
 const StartPage = () => {
   const [index, setIndex] = useState(0);
 
+  const { ref, inView } = useInView();
+  const { setActionSection } = useActiveSection();
+
+  useEffect(() => {
+    if (inView) {
+      setActionSection("Start");
+    }
+  }, [inView, setActionSection]);
+
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -29,7 +40,7 @@ const StartPage = () => {
   }, []);
 
   return (
-    <section id="start">
+    <section id="start" ref={ref}>
    <div className="border border-black h-screen text-white text-4xl flex flex-col justify-center items-center">
       <h1 className="text-4xl font-semibold">
         {" "}
