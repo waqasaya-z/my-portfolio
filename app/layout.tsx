@@ -3,6 +3,7 @@ import { Roboto } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'react-hot-toast'
 import Footer from './Footer'
+import ActiveContextProvider from '@/context/activeContext'
 
 const roboto = Roboto(
   { 
@@ -21,11 +22,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='!scroll-smooth'>
       <body className={`${roboto.className} bg-[#1a1527]` }>
+        <ActiveContextProvider>
         {children}
          <Toaster position='top-center'  />
          <Footer />
+        </ActiveContextProvider>
+
         </body>
     </html>
   )

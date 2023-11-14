@@ -1,27 +1,26 @@
 "use client";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
-import {  useState } from "react";
-
-const links = [
-  { id: 1, name: "Start", hash: "#start" },
-  { id: 2, name: "Lab", hash: "#lab" },
-  { id: 3, name: "About", hash: "#about" },
-  { id: 4, name: "Contact", hash: "#contact" }
-];
+import { useContext, useState } from "react";
+import clsx from "clsx";
+import links from "./data/Links";
+import {
+  ActiveSectionContext,
+  useActiveSection
+} from "@/context/activeContext";
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
-
-  useMotionValueEvent(scrollY,"change", (latest) => {
+  const { activeSection, setActionSection } = useActiveSection();
+  useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (latest > previous && latest > 150) {
-       setHidden(true)
+      setHidden(true);
     } else {
-      setHidden(false); 
+      setHidden(false);
     }
-  } )
+  });
 
   return (
     <header className="z-[999] relative">
@@ -38,15 +37,27 @@ const Navbar = () => {
         }}
         // initial={{ y: 0, x: ".50%", opacity: 0 }}
         animate={hidden ? "hidden" : "visible"}
-        transition={{ duration: 0.35, ease: 'easeInOut' }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
       >
-        <nav className="flex flex-wrap items-center justify-between">
-          <h1> <Link href="#start"> Waqas Ayaz. </Link>  </h1>
+        <nav className="flex flex-wrap items-center justify-between font-semibold">
+          <h1>
+            {" "}
+            <Link href="#start"> Waqas Ayaz. </Link>{" "}
+          </h1>
           <ul className="flex gap-4 mr-5">
             {links.map((link) => (
               <li key={link.id}>
                 {" "}
-                <Link href={link.hash}> {link.name} </Link>{" "}
+                <Link
+                  href={link.hash}
+                  className={clsx("hover:text-[#5918df]", {
+                    "text-[#5918df]": activeSection === link.name
+                  })}
+                  onClick={() => setActionSection(link.name)}
+                >
+                  {" "}
+                  {link.name}{" "}
+                </Link>{" "}
               </li>
             ))}
           </ul>
