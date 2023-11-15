@@ -7,6 +7,7 @@ import Loading from "./components/Loading";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useActiveSection } from "@/context/activeContext";
+import useSectionInView from "@/hooks/useSection";
 
 const TEXTS = [
   "Reactjs",
@@ -22,14 +23,8 @@ const TEXTS = [
 const StartPage = () => {
   const [index, setIndex] = useState(0);
 
-  const { ref, inView } = useInView();
-  const { setActionSection } = useActiveSection();
+  const {ref} = useSectionInView("Start");
 
-  useEffect(() => {
-    if (inView) {
-      setActionSection("Start");
-    }
-  }, [inView, setActionSection]);
 
   useEffect(() => {
     const intervalId = setInterval(

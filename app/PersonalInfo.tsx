@@ -1,24 +1,15 @@
 "use client";
+import useSectionInView from "@/hooks/useSection";
+import dynamic from "next/dynamic";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import codeString from "./data/CodeString";
-import dynamic from "next/dynamic";
-import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/context/activeContext";
-import { useEffect } from "react";
 
 const SyntaxHighlighter = dynamic(() => import("react-syntax-highlighter"), {
   ssr: false
 });
 
 const PersonalInfo = () => {
-  const { ref, inView } = useInView();
-  const { setActionSection } = useActiveSection();
-
-  useEffect(() => {
-    if (inView) {
-      setActionSection("About");
-    }
-  }, [inView, setActionSection]);
+  const {ref} = useSectionInView("About");
 
   return (
     <section ref={ref} id="about" className="bg-[#14121c]">

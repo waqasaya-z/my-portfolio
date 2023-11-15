@@ -1,23 +1,13 @@
 "use client";
 import { sendEmail } from "@/actions/sendEmail";
+import useSectionInView from "@/hooks/useSection";
 import { motion } from "framer-motion";
-import SubmitButton from "./components/SubmitButton";
 import toast from "react-hot-toast";
-import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/context/activeContext";
-import { useEffect } from "react";
+import SubmitButton from "./components/SubmitButton";
 
 const EmailSection = () => {
   
-  
-  const { ref, inView } = useInView();
-  const { setActionSection } = useActiveSection();
-
-  useEffect(() => {
-    if (inView) {
-      setActionSection("Contact");
-    }
-  }, [inView, setActionSection]);
+  const {ref} = useSectionInView("Contact");
 
   return (
     <motion.section

@@ -46,19 +46,18 @@ const Navbar = () => {
           </h1>
           <ul className="flex gap-4 mr-5">
             {links.map((link) => (
-              <li key={link.id}>
-                {" "}
                 <Link
+                 key={link.id}
                   href={link.hash}
                   className={clsx("hover:text-[#5918df]", {
                     "text-[#5918df]": activeSection === link.name
                   })}
                   onClick={() => setActionSection(link.name)}
                 >
-                  {" "}
-                  {link.name}{" "}
-                </Link>{" "}
+              <li>
+                  {link.name}
               </li>
+                </Link>
             ))}
           </ul>
         </nav>

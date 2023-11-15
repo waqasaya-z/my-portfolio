@@ -2,7 +2,7 @@
 import links from "@/app/data/Links";
 import React, { ReactNode, createContext, useContext, useState } from "react";
 
-type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]["name"];
 
 interface ActiveSectionContextType {
   activeSection: SectionName;
