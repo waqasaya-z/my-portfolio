@@ -55,7 +55,7 @@ const EmailSection = () => {
         >
           <input
             name="senderEmail"
-            className="h-10 w-1/3 p-4 rounded-sm"
+            className="h-10 w-full md:w-1/3 p-4 rounded-sm"
             type="email"
             placeholder="example@email.com"
             required
@@ -63,7 +63,7 @@ const EmailSection = () => {
           />
           <textarea
             name="message"
-            className="h-52 w-1/3 my-3 rounded-sm p-4"
+            className="h-52 w-full md:w-1/3 my-3 rounded-sm p-4"
             placeholder="Write to me"
             maxLength={500}
             required

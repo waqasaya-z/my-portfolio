@@ -36,12 +36,12 @@ const StartPage = () => {
 
   return (
     <section id="start" ref={ref}>
-   <div className="h-screen text-white text-4xl flex flex-col justify-center items-center">
-      <h1 className="text-4xl font-semibold">
+   <div className="h-screen text-white text-xl md:text-4xl flex flex-col justify-center items-center">
+      <h1 className="md:text-4xl font-semibold">
         {" "}
         Hi, my name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}
       </h1>
-      <h2 className="flex gap-2 text-3xl font-semibold">
+      <h2 className="flex gap-2 md:text-3xl font-semibold">
         {" "}
         I am a{" "}
        

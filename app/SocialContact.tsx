@@ -1,8 +1,4 @@
 "use client"
-import { FaCodepen, FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa6"
-import { BiLogoUpwork } from "react-icons/bi"
-import { TbBrandFiverr } from "react-icons/tb"
-import Link from "next/link"
 import { motion } from "framer-motion"
 import Socials from "./data/Social"
 import React from "react"
@@ -27,7 +23,7 @@ const SocialContact = () => {
         <div className="text-white font-semibold text-center">
             <h1 className="text-4xl text-white"> Contact </h1>
         </div>
-        <div className="grid grid-cols-3 mt-24 gap-2 text-lg font-medium text-[#5d39a4] shadow-black stroke-black"
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-24 gap-2 text-lg font-medium text-[#5d39a4] shadow-black stroke-black"
         >
         {Socials.map((social,index) => (
             <motion.a key={index} 
