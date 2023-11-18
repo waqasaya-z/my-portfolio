@@ -36,7 +36,7 @@ const StartPage = () => {
 
   return (
     <section id="start" ref={ref}>
-   <div className="border border-black h-screen text-white text-4xl flex flex-col justify-center items-center">
+   <div className="h-screen text-white text-4xl flex flex-col justify-center items-center">
       <h1 className="text-4xl font-semibold">
         {" "}
         Hi, my name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}

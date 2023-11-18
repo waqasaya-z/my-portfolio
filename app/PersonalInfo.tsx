@@ -18,7 +18,7 @@ const PersonalInfo = () => {
         About{" "}
       </h1>
       <SyntaxHighlighter
-        showLineNumbers
+      showLineNumbers
         language="javascript"
         wrapLines
         style={atomOneDark}
