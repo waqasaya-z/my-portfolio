@@ -20,14 +20,14 @@ const LabTilt = () => {
         </span>{" "}
       </h1>
       <div className="grid md:grid-rows-6 md:grid-flow-col gap-4 ">
- <div className="row-span-2 md:col-span-3 "> <Link href={Gamehub.link}><TiltCard id={Gamehub.id} description={Gamehub.description} imageURL={Gamehub.imageURL} /> </Link>  </div>
- <div  className="row-span-2 md:col-span-3  "> <Link href={IssueTracker.link}><TiltCard id={IssueTracker.id} description={IssueTracker.description} imageURL={IssueTracker.imageURL} /> </Link>  </div>
- <div className="row-span-2 md:col-span-3 "><Link href={CountriesAPI.link}> <TiltCard id={CountriesAPI.id} description={CountriesAPI.description} imageURL={CountriesAPI.imageURL} />  </Link> </div>
- <div className="row-span-2  md:col-span-3 "> <Link href={CafeCharmant.link}><TiltCard id={CafeCharmant.id} description={CafeCharmant.description} imageURL={CafeCharmant.imageURL} />  </Link> </div>
- <div className="row-span-2 md:col-span-6 "> <Link href={MultiStep.link}><TiltCard id={MultiStep.id} description={MultiStep.description} imageURL={MultiStep.imageURL} />  </Link> </div>
- <div className="row-span-2 md:col-span-3 "> <Link href={NetflixClone.link}><TiltCard id={NetflixClone.id} description={NetflixClone.description} imageURL={NetflixClone.imageURL} />  </Link> </div>
- <div className="row-span-2 md:col-span-3 "> <Link href={MyPortfolio.link}><TiltCard id={MyPortfolio.id} description={MyPortfolio.description} imageURL={MyPortfolio.imageURL} /> </Link>  </div>
- <div className="md:col-span-3 "> <Link href={Robofriends.link}><TiltCard id={Robofriends.id} description={Robofriends.description} imageURL={Robofriends.imageURL} /> </Link>  </div>
+ <div className="row-span-2 md:col-span-3 "> <Link  target="_blank"  href={Gamehub.link}><TiltCard id={Gamehub.id} description={Gamehub.description} imageURL={Gamehub.imageURL} /> </Link>  </div>
+ <div  className="row-span-2 md:col-span-3  "> <Link target="_blank" href={IssueTracker.link}><TiltCard id={IssueTracker.id} description={IssueTracker.description} imageURL={IssueTracker.imageURL} /> </Link>  </div>
+ <div className="row-span-2 md:col-span-3 "><Link target="_blank" href={CountriesAPI.link}> <TiltCard id={CountriesAPI.id} description={CountriesAPI.description} imageURL={CountriesAPI.imageURL} />  </Link> </div>
+ <div className="row-span-2  md:col-span-3 "> <Link target="_blank" href={CafeCharmant.link}><TiltCard id={CafeCharmant.id} description={CafeCharmant.description} imageURL={CafeCharmant.imageURL} />  </Link> </div>
+ <div className="row-span-2 md:col-span-6 "> <Link target="_blank" href={MultiStep.link}><TiltCard id={MultiStep.id} description={MultiStep.description} imageURL={MultiStep.imageURL} />  </Link> </div>
+ <div className="row-span-2 md:col-span-3 "> <Link target="_blank" href={NetflixClone.link}><TiltCard id={NetflixClone.id} description={NetflixClone.description} imageURL={NetflixClone.imageURL} />  </Link> </div>
+ <div className="row-span-2 md:col-span-3 "> <Link target="_blank" href={MyPortfolio.link}><TiltCard id={MyPortfolio.id} description={MyPortfolio.description} imageURL={MyPortfolio.imageURL} /> </Link>  </div>
+ <div className="md:col-span-3 "> <Link target="_blank" href={Robofriends.link}><TiltCard id={Robofriends.id} description={Robofriends.description} imageURL={Robofriends.imageURL} /> </Link>  </div>
 </div>
     </section>
   );
