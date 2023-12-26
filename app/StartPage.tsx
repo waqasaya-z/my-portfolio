@@ -1,13 +1,11 @@
 "use client";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { BsDownload } from "react-icons/bs";
-import Loading from "./components/Loading";
 import Link from "next/link";
-import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/context/activeContext";
 import useSectionInView from "@/hooks/useSection";
+
 
 const TEXTS = [
   "Reactjs",
@@ -36,7 +34,7 @@ const StartPage = () => {
 
   return (
     <section id="start" ref={ref}>
-   <div className="h-screen text-white text-xl md:text-4xl flex flex-col justify-center items-center">
+   <div className="h-screen text-white text-xl md:text-4xl flex flex-col justify-center items-center bg-[url('/portfolio-bg.webp')] bg-cover bg-no-repeat">
       <h1 className="md:text-4xl font-semibold">
         {" "}
         Hi, my name is <span className="text-[#5918df]"> Waqas Ayaz </span>{" "}
