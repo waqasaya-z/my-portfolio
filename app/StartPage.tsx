@@ -59,7 +59,7 @@ const StartPage = () => {
           </span>{" "}
         </button>
           </Link>
-        <a  download href="public\ResumeONL.pdf" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg duration-300 ease-in-out">
+        <a  download href="/ResumeONL.pdf" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg duration-300 ease-in-out">
           {" "}
           Download CV{" "}
           <span className="ml-2">
