@@ -32,9 +32,9 @@ const EmailSection = () => {
         <p className="text-sm text-gray-700">
           {" "}
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:waqasayaz@icloud.com">
+          <a className="underline" href="mailto:developer@waqasayaz.com">
             {" "}
-            waqasayaz@icloud.com{" "}
+            developer@waqasayaz.com{" "}
           </a>{" "}
           or through this form{" "}
         </p>

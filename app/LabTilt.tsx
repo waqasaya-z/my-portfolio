@@ -10,7 +10,7 @@ const LabTilt = () => {
   const { CafeCharmant, CountriesAPI,Gamehub,IssueTracker,MultiStep,MyPortfolio,NetflixClone,Robofriends } = tilts
   
   return (
-    <section ref={ref} className="text-center p-6" id="lab" >
+    <section ref={ref} className="text-center p-6" id="Lab" >
       <h1 className="text-white text-4xl font-semibold text-center inline-flex mb-10">
         {" "}
         Laboratory{" "}

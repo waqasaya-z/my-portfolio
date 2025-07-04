@@ -27,7 +27,7 @@ const StartPage = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      2000 // every 3 seconds
+      2000 // every 3 seconds 
     );
     return () => clearTimeout(intervalId);
   }, []);
@@ -59,7 +59,7 @@ const StartPage = () => {
           </span>{" "}
         </button>
           </Link>
-        <a  download href="/ResumeONL.pdf" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg duration-300 ease-in-out">
+        <a  download href="/WaqasAyazResumeNC.pdf" className="flex items-center justify-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg duration-300 ease-in-out">
           {" "}
           Download CV{" "}
           <span className="ml-2">
