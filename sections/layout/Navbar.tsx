@@ -3,13 +3,14 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
 import { useContext, useState } from "react";
 import clsx from "clsx";
-import links from "./data/Links";
 import {
   ActiveSectionContext,
   useActiveSection
 } from "@/context/activeContext";
+import links from "@/app/data/Links";
+import { INavbar } from "@/types/app.types";
 
-const Navbar = () => {
+const Navbar = ({ pageData }: { pageData: INavbar }) => {
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
   const { activeSection, setActionSection } = useActiveSection();
@@ -42,22 +43,20 @@ const Navbar = () => {
         <nav className="flex flex-wrap items-center justify-between font-semibold">
           <h1>
             {" "}
-            <Link href="#start"> Waqas Ayaz. </Link>{" "}
+            <Link href="#start"> {pageData.name} </Link>{" "}
           </h1>
           <ul className="flex gap-4 mr-5">
-            {links.map((link) => (
-                <Link
-                 key={link.id}
-                  href={link.hash}
-                  className={clsx("hover:text-[#5918df]", {
-                    "text-[#5918df]": activeSection === link.name
-                  })}
-                  onClick={() => setActionSection(link.name)}
-                >
-              <li>
-                  {link.name}
-              </li>
-                </Link>
+            {pageData.navbar_items.map((link) => (
+              <Link
+                key={link.id}
+                href={link.hash}
+                className={clsx("hover:text-[#5918df]", {
+                  "text-[#5918df]": activeSection === link.hash
+                })}
+                onClick={() => setActionSection(link.hash)}
+              >
+                <li>{link.title}</li>
+              </Link>
             ))}
           </ul>
         </nav>

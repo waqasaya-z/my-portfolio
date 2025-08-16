@@ -1,0 +1,83 @@
+{
+  "Start": {
+    "greeting": "안녕하세요, 제 이름은",
+    "name": "Waqas Ayaz",
+    "iam": "저는",
+    "role": "개발자입니다",
+    "contact": "여기에서 연락하세요",
+    "downloadCV": "이력서 다운로드",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "Vite",
+      "Web",
+      "TypeScript",
+      "Full Stack",
+      "Java",
+      "C#",
+      "JavaScript",
+      "Nodejs"
+    ]
+  },
+  "Lab": {
+    "sectionTitle": "연구실"
+  },
+  "About": {
+    "sectionTitle": "소개",
+    "class": "class Waqas Ayaz",
+    "constructor": {
+      "name": "Waqas Ayaz",
+      "email": "developer@waqasayaz.com"
+    },
+    "workExperience": [
+      { "2024년 9월 - 현재": "Greeka.com 프론트엔드 개발자." },
+      { "2024년 6월 - 8월": "MCB 은행 인턴." },
+      { "2023년 11월 - 12월": "EduTrania 웹 개발 인턴." },
+      { "2023년 7월 - 8월": "EESS Solution 웹 개발 인턴." },
+      { "2022년 - 현재": "Fiverr 풀스택 개발자." },
+      { "2022년 - 현재": "Upwork 풀스택 개발자." }
+    ],
+    "education": [
+      {
+        "2020 - 2024": "Sukkur IBA University - 학사 (BS), 컴퓨터 과학"
+      },
+      { "2018 - 2020": "Army Public College - HSSC, 공학" },
+      { "2006 - 2018": "Army Public School - 학교, 과학" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "HTML/CSS/JS",
+      "TypeScript",
+      "Node.js",
+      "Java",
+      "Bootstrap/Tailwind",
+      "Webpack/Gulp/Vite",
+      "SCSS/Less",
+      "npm/yarn",
+      "Web-extensions",
+      "Prisma",
+      "Firebase",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere",
+      "UX/UI",
+      "Python"
+    ]
+  },
+  "Contact": {
+    "sectionTitle": "연락처",
+    "heading": "메시지를 보내주세요",
+    "description": "아래 이메일로 직접 연락해주세요:",
+    "description_form": "또는 이 양식을 통해.",
+    "email": "developer@waqasayaz.com",
+    "placeholder": "your-address@domain.com",
+    "message": "메시지를 입력하세요",
+    "submit": "전송"
+  }
+}

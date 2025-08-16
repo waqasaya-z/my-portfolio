@@ -1,0 +1,83 @@
+{
+  "Start": {
+    "greeting": "こんにちは、私の名前は",
+    "name": "Waqas Ayaz",
+    "iam": "私は",
+    "role": "開発者です",
+    "contact": "こちらからご連絡ください",
+    "downloadCV": "履歴書をダウンロード",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "Vite",
+      "Web",
+      "TypeScript",
+      "Full Stack",
+      "Java",
+      "C#",
+      "JavaScript",
+      "Nodejs"
+    ]
+  },
+  "Lab": {
+    "sectionTitle": "研究室"
+  },
+  "About": {
+    "sectionTitle": "自己紹介",
+    "class": "class Waqas Ayaz",
+    "constructor": {
+      "name": "Waqas Ayaz",
+      "email": "developer@waqasayaz.com"
+    },
+    "workExperience": [
+      { "2024年9月 - 現在": "Greeka.com でフロントエンド開発者。" },
+      { "2024年6月 - 8月": "MCB銀行でインターン。" },
+      { "2023年11月 - 12月": "EduTrania でウェブ開発インターン。" },
+      { "2023年7月 - 8月": "EESS Solution でウェブ開発インターン。" },
+      { "2022年 - 現在": "Fiverr でフルスタック開発者。" },
+      { "2022年 - 現在": "Upwork でフルスタック開発者。" }
+    ],
+    "education": [
+      {
+        "2020 - 2024": "Sukkur IBA University - 学士号 (BS)、コンピュータサイエンス"
+      },
+      { "2018 - 2020": "Army Public College - HSSC、工学" },
+      { "2006 - 2018": "Army Public School - 学校、理科" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "HTML/CSS/JS",
+      "TypeScript",
+      "Node.js",
+      "Java",
+      "Bootstrap/Tailwind",
+      "Webpack/Gulp/Vite",
+      "SCSS/Less",
+      "npm/yarn",
+      "Web-extensions",
+      "Prisma",
+      "Firebase",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere",
+      "UX/UI",
+      "Python"
+    ]
+  },
+  "Contact": {
+    "sectionTitle": "お問い合わせ",
+    "heading": "メッセージを送ってください",
+    "description": "こちらのメールアドレスに直接ご連絡ください:",
+    "description_form": "またはこのフォームから。",
+    "email": "developer@waqasayaz.com",
+    "placeholder": "your-address@domain.com",
+    "message": "メッセージを入力してください",
+    "submit": "送信"
+  }
+}

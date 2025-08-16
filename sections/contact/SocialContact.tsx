@@ -1,7 +1,8 @@
 "use client"
 import { motion } from "framer-motion"
-import Socials from "./data/Social"
+import Socials from "../../app/data/Social"
 import React from "react"
+import { IContactTranslation } from "@/types/app.types"
 
 const fadeInAnimationVariants = {
   initial: {
@@ -17,11 +18,11 @@ const fadeInAnimationVariants = {
   }),
 }
 
-const SocialContact = () => {
+const SocialContact = ({pageData} : {pageData: IContactTranslation}) => {
   return (
     <section id="contact" className="mt-4 scroll-mt-6">
         <div className="text-white font-semibold text-center">
-            <h1 className="text-4xl text-white"> Contact </h1>
+            <h1 className="text-4xl text-white"> {pageData.sectionTitle} </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-24 gap-2 text-lg font-medium text-[#5d39a4] shadow-black stroke-black"
         >

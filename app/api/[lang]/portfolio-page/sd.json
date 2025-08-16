@@ -1,0 +1,81 @@
+{
+  "Start": {
+    "greeting": "سلام، منهنجو نالو آهي",
+    "name": "وقاص اعياز",
+    "iam": "مان هڪ آهيان",
+    "role": "ڊولپر",
+    "contact": "هتي مون سان رابطو ڪريو",
+    "downloadCV": "سي وي ڊائونلوڊ ڪريو",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "Vite",
+      "ويب",
+      "TypeScript",
+      "فل اسٽيڪ",
+      "Java",
+      "C#",
+      "JavaScript",
+      "Nodejs"
+    ]
+  },
+  "Lab": {
+    "sectionTitle": "ليبارٽري"
+  },
+  "About": {
+    "sectionTitle": "جي باري ۾",
+    "class": "ڪلاس وقاص اعياز",
+    "constructor": {
+      "name": "وقاص اعياز",
+      "email": "developer@waqasayaz.com"
+    },
+    "workExperience": [
+      { "سيپٽمبر 2024 - هاڻوڪو": "Frontend ڊولپر at Greeka.com." },
+      { "جون - آگسٽ 2024": "Intern at MCB Bank." },
+      { "نومبر - ڊسمبر 2023": "Web ڊولپر Intern at EduTrania" },
+      { "جولاءِ - آگسٽ 2023": "Web ڊولپر Intern at EESS Solution." },
+      { "2022 - هاڻوڪو": "فل اسٽيڪ ڊولپر at Fiverr." },
+      { "2022 - هاڻوڪو": "فل اسٽيڪ ڊولپر at Upwork." }
+    ],
+    "education": [
+      { "2020 - 2024": "سکر آءِ بي اي يونيورسٽي - بيچلر ڊگري (BS), ڪمپيوٽر سائنس" },
+      { "2018 - 2020": "آرمي پبلڪ ڪاليج - HSSC, انجنيئرنگ" },
+      { "2006 - 2018": "آرمي پبلڪ اسڪول - اسڪول، سائنس" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "HTML/CSS/JS",
+      "TypeScript",
+      "Node.js",
+      "Java",
+      "Bootstrap/Tailwind",
+      "Webpack/Gulp/Vite",
+      "SCSS/Less",
+      "npm/yarn",
+      "ويب-ايڪسٽينشنز",
+      "Prisma",
+      "Firebase",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere",
+      "UX/UI",
+      "Python"
+    ]
+  },
+  "Contact": {
+    "sectionTitle": "رابطو ڪريو",
+    "heading": "مون کي لکو",
+    "description": "مھرباني ڪري مون سان سڌو رابطو ڪريو",
+    "description_form": "يا هن فارم ذريعي.",
+    "email": "developer@waqasayaz.com",
+    "placeholder": "توھان جو ايڊريس@domain.com",
+    "message": "مون کي لکو",
+    "submit": "جمع ڪريو"
+  }
+}

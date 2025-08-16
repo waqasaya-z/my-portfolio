@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "وقاص أيّاز",
+    "description": "الموقع الشخصي لوقاص أيّاز.",
+    "keywords": [
+      "وقاص أيّاز",
+      "مطور Full Stack",
+      "React",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "مطور ويب",
+      "محفظة أعمال"
+    ],
+    "authors": [
+      {
+        "name": "وقاص أيّاز",
+        "url": "https://waqasayaz.com"
+      }
+    ],
+    "creator": "وقاص أيّاز",
+    "publisher": "وقاص أيّاز",
+    "metadataBase": "https://waqasayaz.com",
+    "applicationName": "محفظة وقاص أيّاز",
+    "generator": "Next.js 14",
+    "referrer": "origin-when-cross-origin",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1
+      }
+    },
+    "alternates": {
+      "canonical": "https://waqasayaz.com",
+      "languages": {
+        "en": "https://waqasayaz.com/en",
+        "ur": "https://waqasayaz.com/ur",
+        "es": "https://waqasayaz.com/es",
+        "de": "https://waqasayaz.com/de",
+        "pt": "https://waqasayaz.com/pt",
+        "fr": "https://waqasayaz.com/fr",
+        "ar": "https://waqasayaz.com/ar",
+        "el": "https://waqasayaz.com/el",
+        "ru": "https://waqasayaz.com/ru",
+        "ja": "https://waqasayaz.com/ja",
+        "ko": "https://waqasayaz.com/ko"
+      }
+    },
+    "openGraph": {
+      "title": "وقاص أيّاز",
+      "description": "الموقع الشخصي لوقاص أيّاز.",
+      "url": "https://waqasayaz.com",
+      "siteName": "محفظة وقاص أيّاز",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "width": 1200,
+          "height": 630,
+          "alt": "محفظة وقاص أيّاز"
+        }
+      ],
+      "locale": "ar_AR",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "وقاص أيّاز",
+      "description": "الموقع الشخصي لوقاص أيّاز.",
+      "creator": "@waqasayaz",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "alt": "محفظة وقاص أيّاز"
+        }
+      ]
+    },
+    "category": "محفظة أعمال"
+  },
+  "Navbar": {
+    "name": "وقاص أيّاز",
+    "navbar_items": [
+      { "id": 1, "title": "ابدأ", "hash": "#start" },
+      { "id": 2, "title": "المختبر", "hash": "#lab" },
+      { "id": 3, "title": "من نحن", "hash": "#about" },
+      { "id": 4, "title": "تواصل معنا", "hash": "#contact" }
+    ]
+  },
+  "Footer": {
+    "name": "© وقاص أيّاز 2023"
+  }
+}

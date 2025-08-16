@@ -1,0 +1,83 @@
+{
+  "Start": {
+    "greeting": "Γεια σου, το όνομά μου είναι",
+    "name": "Waqas Ayaz",
+    "iam": "Είμαι",
+    "role": "Προγραμματιστής",
+    "contact": "Επικοινώνησε μαζί μου εδώ",
+    "downloadCV": "Κατέβασε Βιογραφικό",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "Vite",
+      "Web",
+      "TypeScript",
+      "Full Stack",
+      "Java",
+      "C#",
+      "JavaScript",
+      "Nodejs"
+    ]
+  },
+  "Lab": {
+    "sectionTitle": "Εργαστήριο"
+  },
+  "About": {
+    "sectionTitle": "Σχετικά",
+    "class": "class Waqas Ayaz",
+    "constructor": {
+      "name": "Waqas Ayaz",
+      "email": "developer@waqasayaz.com"
+    },
+    "workExperience": [
+      { "Σεπ 2024 - τώρα": "Frontend προγραμματιστής στο Greeka.com." },
+      { "Ιούν - Αύγ 2024": "Πρακτική στο MCB Bank." },
+      { "Νοέ - Δεκ 2023": "Πρακτική προγραμματιστής Web στο EduTrania." },
+      { "Ιούλ - Αύγ 2023": "Πρακτική προγραμματιστής Web στο EESS Solution." },
+      { "2022 - τώρα": "Full-stack Προγραμματιστής στο Fiverr." },
+      { "2022 - τώρα": "Full-stack Προγραμματιστής στο Upwork." }
+    ],
+    "education": [
+      {
+        "2020 - 2024": "Πανεπιστήμιο Sukkur IBA - Πτυχίο (BS), Επιστήμη Υπολογιστών"
+      },
+      { "2018 - 2020": "Army Public College - HSSC, Μηχανική" },
+      { "2006 - 2018": "Army Public School - Σχολείο, Επιστήμη" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "HTML/CSS/JS",
+      "TypeScript",
+      "Node.js",
+      "Java",
+      "Bootstrap/Tailwind",
+      "Webpack/Gulp/Vite",
+      "SCSS/Less",
+      "npm/yarn",
+      "Web-extensions",
+      "Prisma",
+      "Firebase",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere",
+      "UX/UI",
+      "Python"
+    ]
+  },
+  "Contact": {
+    "sectionTitle": "Επικοινωνία",
+    "heading": "Γράψε μου",
+    "description": "Παρακαλώ επικοινώνησε απευθείας μαζί μου στο",
+    "description_form": "ή μέσω αυτής της φόρμας.",
+    "email": "developer@waqasayaz.com",
+    "placeholder": "your-address@domain.com",
+    "message": "Γράψε μου",
+    "submit": "Υποβολή"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "Metadata": {
+    "title": "وقاص اعياز",
+    "description": "وقاص اعياز جو ذاتي پورٽ فوليو ويب سائيٽ.",
+    "keywords": [
+      "وقاص اعياز",
+      "فل اسٽيڪ ڊولپر",
+      "React",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "ويب ڊولپر",
+      "پورٽ فوليو"
+    ],
+    "authors": [
+      {
+        "name": "وقاص اعياز",
+        "url": "https://waqasayaz.com"
+      }
+    ],
+    "creator": "وقاص اعياز",
+    "publisher": "وقاص اعياز",
+    "metadataBase": "https://waqasayaz.com",
+    "applicationName": "وقاص اعياز پورٽ فوليو",
+    "generator": "Next.js 14",
+    "referrer": "origin-when-cross-origin",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1
+      }
+    },
+    "alternates": {
+      "canonical": "https://waqasayaz.com",
+      "languages": {
+        "en": "https://waqasayaz.com/en",
+        "ur": "https://waqasayaz.com/ur",
+        "es": "https://waqasayaz.com/es",
+        "de": "https://waqasayaz.com/de",
+        "pt": "https://waqasayaz.com/pt",
+        "fr": "https://waqasayaz.com/fr",
+        "ar": "https://waqasayaz.com/ar",
+        "el": "https://waqasayaz.com/el",
+        "ru": "https://waqasayaz.com/ru",
+        "ja": "https://waqasayaz.com/ja",
+        "ko": "https://waqasayaz.com/ko",
+        "sd": "https://waqasayaz.com/sd"
+      }
+    },
+    "openGraph": {
+      "title": "وقاص اعياز",
+      "description": "وقاص اعياز جو ذاتي پورٽ فوليو ويب سائيٽ.",
+      "url": "https://waqasayaz.com",
+      "siteName": "وقاص اعياز پورٽ فوليو",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "width": 1200,
+          "height": 630,
+          "alt": "وقاص اعياز پورٽ فوليو"
+        }
+      ],
+      "locale": "sd_PK",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "وقاص اعياز",
+      "description": "وقاص اعياز جو ذاتي پورٽ فوليو ويب سائيٽ.",
+      "creator": "@waqasayaz",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "alt": "وقاص اعياز پورٽ فوليو"
+        }
+      ]
+    },
+    "category": "پورٽ فوليو"
+  },
+  "Navbar": {
+    "name": "وقاص اعياز",
+    "navbar_items": [
+      { "id": 1, "title": "شروع ڪريو", "hash": "#start" },
+      { "id": 2, "title": "ليبارٽري", "hash": "#lab" },
+      { "id": 3, "title": "جي باري ۾", "hash": "#about" },
+      { "id": 4, "title": "رابطي ۾ اچو", "hash": "#contact" }
+    ]
+  },
+  "Footer": {
+    "name": "© وقاص اعياز 2023"
+  }
+}

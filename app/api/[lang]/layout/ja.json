@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "ワカス・アヤズ",
+    "description": "ワカス・アヤズの個人ポートフォリオサイト。",
+    "keywords": [
+      "ワカス・アヤズ",
+      "フルスタック開発者",
+      "React",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "ウェブ開発者",
+      "ポートフォリオ"
+    ],
+    "authors": [
+      {
+        "name": "ワカス・アヤズ",
+        "url": "https://waqasayaz.com"
+      }
+    ],
+    "creator": "ワカス・アヤズ",
+    "publisher": "ワカス・アヤズ",
+    "metadataBase": "https://waqasayaz.com",
+    "applicationName": "ワカス・アヤズ ポートフォリオ",
+    "generator": "Next.js 14",
+    "referrer": "origin-when-cross-origin",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1
+      }
+    },
+    "alternates": {
+      "canonical": "https://waqasayaz.com",
+      "languages": {
+        "en": "https://waqasayaz.com/en",
+        "ur": "https://waqasayaz.com/ur",
+        "es": "https://waqasayaz.com/es",
+        "de": "https://waqasayaz.com/de",
+        "pt": "https://waqasayaz.com/pt",
+        "fr": "https://waqasayaz.com/fr",
+        "ar": "https://waqasayaz.com/ar",
+        "el": "https://waqasayaz.com/el",
+        "ru": "https://waqasayaz.com/ru",
+        "ja": "https://waqasayaz.com/ja",
+        "ko": "https://waqasayaz.com/ko"
+      }
+    },
+    "openGraph": {
+      "title": "ワカス・アヤズ",
+      "description": "ワカス・アヤズの個人ポートフォリオサイト。",
+      "url": "https://waqasayaz.com",
+      "siteName": "ワカス・アヤズ ポートフォリオ",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "width": 1200,
+          "height": 630,
+          "alt": "ワカス・アヤズ ポートフォリオ"
+        }
+      ],
+      "locale": "ja_JP",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "ワカス・アヤズ",
+      "description": "ワカス・アヤズの個人ポートフォリオサイト。",
+      "creator": "@waqasayaz",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "alt": "ワカス・アヤズ ポートフォリオ"
+        }
+      ]
+    },
+    "category": "ポートフォリオ"
+  },
+  "Navbar": {
+    "name": "ワカス・アヤズ",
+    "navbar_items": [
+      { "id": 1, "title": "スタート", "hash": "#start" },
+      { "id": 2, "title": "ラボ", "hash": "#lab" },
+      { "id": 3, "title": "概要", "hash": "#about" },
+      { "id": 4, "title": "お問い合わせ", "hash": "#contact" }
+    ]
+  },
+  "Footer": {
+    "name": "© ワカス・アヤズ 2023"
+  }
+}

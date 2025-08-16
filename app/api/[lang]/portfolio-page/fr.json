@@ -1,0 +1,83 @@
+{
+  "Start": {
+    "greeting": "Bonjour, je m'appelle",
+    "name": "Waqas Ayaz",
+    "iam": "Je suis un",
+    "role": "Développeur",
+    "contact": "Contactez-moi ici",
+    "downloadCV": "Télécharger le CV",
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "Vite",
+      "Web",
+      "TypeScript",
+      "Full Stack",
+      "Java",
+      "C#",
+      "JavaScript",
+      "Nodejs"
+    ]
+  },
+  "Lab": {
+    "sectionTitle": "Laboratoire"
+  },
+  "About": {
+    "sectionTitle": "À propos de moi",
+    "class": "classe Waqas Ayaz",
+    "constructor": {
+      "name": "Waqas Ayaz",
+      "email": "developer@waqasayaz.com"
+    },
+    "workExperience": [
+      { "Sep 2024 - présent": "Développeur frontend chez Greeka.com." },
+      { "Juin - Août 2024": "Stagiaire à la MCB Bank." },
+      { "Nov - Déc 2023": "Stagiaire en développement web chez EduTrania." },
+      { "Juil - Août 2023": "Stagiaire en développement web chez EESS Solution." },
+      { "2022 - présent": "Développeur Full-stack sur Fiverr." },
+      { "2022 - présent": "Développeur Full-stack sur Upwork." }
+    ],
+    "education": [
+      {
+        "2020 - 2024": "Université Sukkur IBA - Licence (BS), Informatique"
+      },
+      { "2018 - 2020": "Army Public College - HSSC, Ingénierie" },
+      { "2006 - 2018": "Army Public School - École, Sciences" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Nest.js",
+      "Spring boot",
+      "HTML/CSS/JS",
+      "TypeScript",
+      "Node.js",
+      "Java",
+      "Bootstrap/Tailwind",
+      "Webpack/Gulp/Vite",
+      "SCSS/Less",
+      "npm/yarn",
+      "Web-extensions",
+      "Prisma",
+      "Firebase",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere",
+      "UX/UI",
+      "Python"
+    ]
+  },
+  "Contact": {
+    "sectionTitle": "Contact",
+    "heading": "Écrivez-moi",
+    "description": "Veuillez me contacter directement à",
+    "description_form": "ou via ce formulaire.",
+    "email": "developer@waqasayaz.com",
+    "placeholder": "votre-adresse@domaine.com",
+    "message": "Écrivez-moi",
+    "submit": "Envoyer"
+  }
+}

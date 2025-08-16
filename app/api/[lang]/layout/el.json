@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "Waqas Ayaz",
+    "description": "Προσωπικός ιστότοπος portfolio του Waqas Ayaz.",
+    "keywords": [
+      "Waqas Ayaz",
+      "Full Stack Developer",
+      "React",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Web Developer",
+      "Portfolio"
+    ],
+    "authors": [
+      {
+        "name": "Waqas Ayaz",
+        "url": "https://waqasayaz.com"
+      }
+    ],
+    "creator": "Waqas Ayaz",
+    "publisher": "Waqas Ayaz",
+    "metadataBase": "https://waqasayaz.com",
+    "applicationName": "Portfolio Waqas Ayaz",
+    "generator": "Next.js 14",
+    "referrer": "origin-when-cross-origin",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1
+      }
+    },
+    "alternates": {
+      "canonical": "https://waqasayaz.com",
+      "languages": {
+        "en": "https://waqasayaz.com/en",
+        "ur": "https://waqasayaz.com/ur",
+        "es": "https://waqasayaz.com/es",
+        "de": "https://waqasayaz.com/de",
+        "pt": "https://waqasayaz.com/pt",
+        "fr": "https://waqasayaz.com/fr",
+        "ar": "https://waqasayaz.com/ar",
+        "el": "https://waqasayaz.com/el",
+        "ru": "https://waqasayaz.com/ru",
+        "ja": "https://waqasayaz.com/ja",
+        "ko": "https://waqasayaz.com/ko"
+      }
+    },
+    "openGraph": {
+      "title": "Waqas Ayaz",
+      "description": "Προσωπικός ιστότοπος portfolio του Waqas Ayaz.",
+      "url": "https://waqasayaz.com",
+      "siteName": "Portfolio Waqas Ayaz",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "width": 1200,
+          "height": 630,
+          "alt": "Portfolio Waqas Ayaz"
+        }
+      ],
+      "locale": "el_GR",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Waqas Ayaz",
+      "description": "Προσωπικός ιστότοπος portfolio του Waqas Ayaz.",
+      "creator": "@waqasayaz",
+      "images": [
+        {
+          "url": "https://waqasayaz.com/personal/ME.jpeg",
+          "alt": "Portfolio Waqas Ayaz"
+        }
+      ]
+    },
+    "category": "portfolio"
+  },
+  "Navbar": {
+    "name": "Waqas Ayaz",
+    "navbar_items": [
+      { "id": 1, "title": "Αρχική", "hash": "#start" },
+      { "id": 2, "title": "Εργαστήριο", "hash": "#lab" },
+      { "id": 3, "title": "Σχετικά", "hash": "#about" },
+      { "id": 4, "title": "Επικοινωνία", "hash": "#contact" }
+    ]
+  },
+  "Footer": {
+    "name": "© Waqas Ayaz 2023"
+  }
+}
