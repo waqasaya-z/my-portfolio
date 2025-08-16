@@ -11,6 +11,7 @@ const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500"]
 });
+
 export async function generateMetadata({
   params
 }: {
@@ -39,7 +40,9 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { lang: string };
 }) {
-  const dir = ["ar", "he", "fa", "ur"].includes(params.lang) ? "rtl" : "ltr";
+  const dir = ["ar", "he", "fa", "ur", "sd"].includes(params.lang)
+    ? "rtl"
+    : "ltr";
 
   const language = params?.lang ?? "en";
   const res = await fetch(
@@ -49,7 +52,10 @@ export default async function RootLayout({
   const data: SiteContent = await res.json();
 
   return (
-    <html lang={language} dir={dir}>
+    <html lang={language} dir={dir} className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/svg/code.svg" />
+      </head>
       <body className={`${roboto.className} bg-[#1a1527]`}>
         <ActiveContextProvider>
           <Navbar pageData={data.Navbar} />
