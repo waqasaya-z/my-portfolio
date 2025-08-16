@@ -5,7 +5,8 @@ import { Toaster } from "react-hot-toast";
 import ActiveContextProvider from "@/context/activeContext";
 import Navbar from "@/sections/layout/Navbar";
 import Footer from "@/sections/layout/Footer";
-import { IMetadata, SiteContent } from "@/types/app.types";
+import { SiteContent } from "@/types/app.types";
+import { Analytics } from "@vercel/analytics/next";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default async function RootLayout({
         <link rel="icon" href="/svg/code.svg" />
       </head>
       <body className={`${roboto.className} bg-[#1a1527]`}>
+        <Analytics />
         <ActiveContextProvider>
           <Navbar pageData={data.Navbar} />
           {children}
