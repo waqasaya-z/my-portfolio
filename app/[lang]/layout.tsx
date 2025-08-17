@@ -57,7 +57,7 @@ export default async function RootLayout({
       <head>
         <link rel="icon" href="/svg/code.svg" />
       </head>
-      <body className={`${roboto.className} bg-[#1a1527]`}>
+      <body className={`${roboto.className} bg-[#130d22]`}>
         <Analytics />
         <ActiveContextProvider>
           <Navbar pageData={data.Navbar} />

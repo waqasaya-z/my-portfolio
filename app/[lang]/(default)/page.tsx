@@ -20,8 +20,10 @@ const page = async ({ params }: { params: { lang: string } }) => {
       <StartPage pageData={data.Start} />
       <LabTilt pageData={data.Lab} />
       <PersonalInfo pageData={data.About} />
-      <SocialContact pageData={data.Contact} />
-      <EmailSection pageData={data.Contact} />
+      <div className="border border-purple-950 pb-6">
+        <SocialContact pageData={data.Contact} />
+        <EmailSection pageData={data.Contact} />
+      </div>
     </main>
   );
 };
