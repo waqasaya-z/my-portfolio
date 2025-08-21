@@ -36,8 +36,10 @@
       }
     },
     "alternates": {
-      "canonical": "https://waqasayaz.com",
+      "canonical": "https://waqasayaz.com/ru",
       "languages": {
+        "en-US": "https://waqasayaz.com/en-US",
+        "en-GB": "https://waqasayaz.com/en-GB",
         "en": "https://waqasayaz.com/en",
         "ur": "https://waqasayaz.com/ur",
         "es": "https://waqasayaz.com/es",
@@ -71,7 +73,7 @@
       "card": "summary_large_image",
       "title": "Вакас Айаз",
       "description": "Личный портфолио-сайт Вакас Айаз.",
-      "creator": "@waqasayaz",
+      "creator": "@waqaswhat",
       "images": [
         {
           "url": "https://waqasayaz.com/personal/ME.jpeg",

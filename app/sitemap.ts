@@ -17,10 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ru",
     "ja",
     "ko",
-    "sd"
+    "sd",
   ];
-
-  const sections = ["start", "lab", "about", "contact"];
 
   const urls: MetadataRoute.Sitemap = [];
 
@@ -28,19 +26,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const langUrl = `${baseUrl}/${lang}`;
 
     urls.push({
-      url: `${langUrl}/`,
+      url: `${langUrl}`, // no trailing slash
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1.0
-    });
-
-    sections.forEach((section) => {
-      urls.push({
-        url: `${langUrl}/#${section}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
-        priority: 0.8
-      });
+      priority: 1.0,
     });
   });
 

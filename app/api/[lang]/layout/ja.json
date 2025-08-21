@@ -36,8 +36,10 @@
       }
     },
     "alternates": {
-      "canonical": "https://waqasayaz.com",
+      "canonical": "https://waqasayaz.com/ja",
       "languages": {
+        "en-US": "https://waqasayaz.com/en-US",
+        "en-GB": "https://waqasayaz.com/en-GB",
         "en": "https://waqasayaz.com/en",
         "ur": "https://waqasayaz.com/ur",
         "es": "https://waqasayaz.com/es",
@@ -71,7 +73,7 @@
       "card": "summary_large_image",
       "title": "ワカス・アヤズ",
       "description": "ワカス・アヤズの個人ポートフォリオサイト。",
-      "creator": "@waqasayaz",
+      "creator": "@waqaswhat",
       "images": [
         {
           "url": "https://waqasayaz.com/personal/ME.jpeg",

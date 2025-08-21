@@ -36,8 +36,10 @@
       }
     },
     "alternates": {
-      "canonical": "https://waqasayaz.com",
+      "canonical": "https://waqasayaz.com/ko",
       "languages": {
+         "en-US": "https://waqasayaz.com/en-US",
+        "en-GB": "https://waqasayaz.com/en-GB",
         "en": "https://waqasayaz.com/en",
         "ur": "https://waqasayaz.com/ur",
         "es": "https://waqasayaz.com/es",
@@ -71,7 +73,7 @@
       "card": "summary_large_image",
       "title": "와카스 아야즈",
       "description": "와카스 아야즈의 개인 포트폴리오 웹사이트입니다.",
-      "creator": "@waqasayaz",
+      "creator": "@waqaswhat",
       "images": [
         {
           "url": "https://waqasayaz.com/personal/ME.jpeg",
